@@ -23,7 +23,7 @@ GERPRO é uma ferramenta desenvolvida para auxiliar na gestão de projetos.
 
 Instruções para instalação abaixo, considero que o Python versão 3 está devidamente instalado e que o módulo pip e virtualenv estão configurados.
 
-Após download dos arquivos do projeto, pode-se executar o arquivo "run.sh" em ambientes Linux e MacOS ou "run.bat" em ambientes Windows, que será responsável pela (1) criação e (2) ativação do ambiente virtual, (3) instalação do módulos Python necessários para execução do projeto, (4) uma primeira carga no banco de dados com exemplos de projeto tabelas de apoio e a (5) execução do flask em localhost.
+Após download dos arquivos do projeto, pode-se executar o arquivo "run.sh" em ambientes Linux e MacOS ou "run.bat" em ambientes Windows, que será responsável pela (1) criação e (2) ativação do ambiente virtual, (3) instalação do módulos Python necessários para execução do projeto, (4) uma primeira carga no banco de dados com exemplos de projeto e tabelas de apoio e a (5) execução do flask em localhost.
 
 ### Ambientes Linux/MacOS
 
