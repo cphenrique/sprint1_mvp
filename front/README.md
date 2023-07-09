@@ -1,5 +1,5 @@
 # GERPRO, Sistema Gerenciador de Projetos
 
+Seguir as instruções do readme da api.
 
-
-Basta fazer o download do projeto e abrir o arquivo index.html no seu browser.
+Na sequencia abrir o arquivo index.html no seu browser.
