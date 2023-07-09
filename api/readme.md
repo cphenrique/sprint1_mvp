@@ -27,15 +27,15 @@ Após download dos arquivos do projeto, pode-se executar o arquivo "run.sh", que
 
 Para executar o arquivo .sh no Linux, precisamos transformá-lo em um executável, esse passo pode ser realizado de duas maneira:
 
-- Via interface gráfica, clicando com o botão direito no arquivo e marcando como "Executable as Program". 
-![Alt text](image-3.png)
+- Via interface gráfica, clicando com o botão direito no arquivo e marcando como "Executable as Program", em ambientes Debian com Gnome.
 
-- Via terminal, acessando o diretório do arquivo e executando o comando de chmod, que modifica as permissões do arquivo.
+- Via terminal, acessando o diretório do arquivo e executando o comando de chmod, que modifica as permissões do arquivo. Atenção, o comando chmod +770 libera acesso de leitura, escrita e execução para todos os usuários e grupos com acesso ao arquivo.
+
 ```bash
-chmod +777 run.sh
+chmod +770 run.sh
 ```
 
-- Caso não seja possível utilizar o script, podemos executar individualmente as linhas de configuração abaixo na sequencia que aparecem no detalhe abaixo.
+- Caso não seja possível utilizar o script, podemos executar individualmente as linhas de configuração abaixo na sequencia que aparecem no detalhe abaixo, consdierando um terminal aberto dentro do diretório "api".
 
 ``` bash
 virtualenv venv
