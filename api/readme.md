@@ -21,9 +21,11 @@ GERPRO é uma ferramenta desenvolvida para auxiliar na gestão de projetos.
 
 ## Instalação
 
-### Ambientes Linux
+Instruções para instalação abaixo, considero que o Python versão 3 está devidamente instalado e que o módulo pip e virtualenv estão configurados.
 
-Após download dos arquivos do projeto, pode-se executar o arquivo "run.sh", que será responsável pela (1) criação e (2) ativação do ambiente virtual, (3) instalação do módulos Python necessários para execução do projeto, (4) uma primeira carga no banco de dados com exemplos de projeto tabelas de apoio e a (5) execução do flask em localhost.
+Após download dos arquivos do projeto, pode-se executar o arquivo "run.sh" em ambientes Linux e MacOS ou "run.bat" em ambientes Windows, que será responsável pela (1) criação e (2) ativação do ambiente virtual, (3) instalação do módulos Python necessários para execução do projeto, (4) uma primeira carga no banco de dados com exemplos de projeto tabelas de apoio e a (5) execução do flask em localhost.
+
+### Ambientes Linux/MacOS
 
 Para executar o arquivo .sh no Linux, precisamos transformá-lo em um executável, esse passo pode ser realizado de duas maneira:
 
@@ -35,7 +37,7 @@ Para executar o arquivo .sh no Linux, precisamos transformá-lo em um executáve
 chmod +770 run.sh
 ```
 
-- Caso não seja possível utilizar o script, podemos executar individualmente as linhas de configuração abaixo na sequencia que aparecem no detalhe abaixo, consdierando um terminal aberto dentro do diretório "api".
+Caso não seja possível utilizar o script, podemos executar individualmente as linhas de configuração abaixo na sequencia que aparecem no detalhe abaixo, considerando um terminal aberto dentro do diretório "api".
 
 ``` bash
 virtualenv venv
@@ -46,6 +48,18 @@ flask run --host 0.0.0.0 --port 5000 --reload
 ```
 
 ### Ambientes Windows
+
+Para executar o arquivo "run.bat" basta clicar duas vezes para executar e aceitar os prompts de execução e acesso a rede.
+
+Caso não seja possível utilizar o script, podemos executar individualmente as linhas de configuração abaixo na sequencia que aparecem no detalhe abaixo, considerando uma tela de comando aberta dentro da pasta "api".
+
+``` cmd
+python -m venv env
+call env\Scripts\activate
+pip install -r requirements.txt
+python3 db_init.py
+flask run --host 0.0.0.0 --port 5000 --reload
+```
 
 ## Utilização
 
